@@ -1,5 +1,8 @@
 # NET-PULSE-AI-Powered-Network-Intrusion-Detection-System
 
+[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-orange)](https://streamlit.io/)
+
 NET PULSE is a deep learning-based Network Intrusion Detection System (NIDS) built using a hybrid CNN–LSTM fusion architecture trained on the UNSW-NB15 dataset.
 
 The system combines flow-level statistical features with packet-sequence modeling and provides an interactive Streamlit dashboard for traffic analysis and threat visualization.
