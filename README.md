@@ -1,7 +1,8 @@
-# NET-PULSE-AI-Powered-Network-Intrusion-Detection-System
+# NET PULSE — AI-Powered Network Intrusion Detection System
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-orange)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 NET PULSE is a deep learning-based Network Intrusion Detection System (NIDS) built using a hybrid CNN–LSTM fusion architecture trained on the UNSW-NB15 dataset.
 
@@ -11,7 +12,7 @@ The system combines flow-level statistical features with packet-sequence modelin
 
 ## Overview
 
-Modern network attacks are increasingly sophisticated and difficult to detect using traditional rule-based systems. NET PULSE approaches intrusion detection using deep learning by modeling both statistical behavior and temporal packet patterns.
+Modern network attacks are increasingly sophisticated and difficult to detect with traditional rule-based systems. NET PULSE approaches intrusion detection using deep learning by modeling both statistical behavior and temporal packet patterns.
 
 The model classifies traffic into:
 
@@ -25,26 +26,27 @@ Overall multi-class accuracy: **~82%**
 
 ## Model Architecture
 
-The architecture follows a fusion-based design:
+The architecture follows a fusion-based design.
 
 ### Flow Branch
-- Numerical flow-level features
-- Scaled using StandardScaler
-- Processed through fully connected layers
+- Numerical flow-level features  
+- Scaled using StandardScaler  
+- Processed through fully connected layers  
 
 ### Sequence Branch
-- Packet-level sequence representation
+- Packet-level sequence representation  
 - Engineered using:
-  - Packet size
-  - Time gap
-  - Direction
-- 1D CNN for local pattern extraction
-- LSTM for temporal modeling
+  - Packet size  
+  - Time gap  
+  - Direction  
+- 1D CNN for local pattern extraction  
+- LSTM for temporal modeling  
 
 ### Fusion
+
 Outputs from both branches are concatenated and passed to final dense layers for multi-class classification.
 
-This design allows the model to learn both statistical and temporal attack behavior.
+This design enables the model to learn both statistical and temporal attack patterns.
 
 ---
 
@@ -52,13 +54,13 @@ This design allows the model to learn both statistical and temporal attack behav
 
 **Dataset:** UNSW-NB15  
 
-- Contains modern normal and attack traffic  
-- Includes flow-level features and attack categories  
+- Modern normal and attack traffic  
+- Flow-level features and attack categories  
 
 Preprocessing includes:
-- Label encoding of categorical features (`proto`, `service`, `state`)
-- Feature scaling
-- Custom packet-sequence generation
+- Label encoding (`proto`, `service`, `state`)  
+- Feature scaling  
+- Custom packet-sequence generation  
 
 The dataset is not included in this repository due to size constraints.
 
@@ -84,16 +86,23 @@ The dataset is not included in this repository due to size constraints.
 ## How to Run
 
 Clone the repository:
-git clone https://github.com/your-username/netpulse-ai-nids.git
-cd netpulse-ai-nids
+
+```
+git clone https://github.com/Shashank531/NET-PULSE-AI-Powered-Network-Intrusion-Detection-System.git
+cd NET-PULSE-AI-Powered-Network-Intrusion-Detection-System
+```
 
 Install dependencies:
+
+```
 pip install -r requirements.txt
+```
 
 Run the application:
+
+```
 streamlit run app.py
-
-
+```
 
 Upload a CSV file containing network traffic data and begin analysis.
 
@@ -108,29 +117,37 @@ Upload a CSV file containing network traffic data and begin analysis.
 - NumPy  
 - Streamlit  
 - Plotly  
+- Matplotlib  
+- Seaborn  
 
 ---
 
 ## Results
 
-- Multi-class classification (Normal / Suspicious / Malicious)
-- ~82% accuracy
-- Confidence-based threat scoring
-- Interactive threat analytics dashboard
+- Multi-class classification (Normal / Suspicious / Malicious)  
+- ~82% accuracy  
+- Confidence-based threat scoring  
+- Interactive analytics dashboard  
 
 ---
 
 ## Future Improvements
 
-- Model explainability (SHAP or attention visualization)
-- Docker containerization
-- Real-time packet capture integration
-- CI/CD deployment pipeline
-- Online model updating
+- Model explainability (SHAP or attention visualization)  
+- Docker containerization  
+- Real-time packet capture integration  
+- CI/CD deployment pipeline  
+- Online model updating  
+
+---
+
+## License
+
+This project is licensed under the MIT License.
 
 ---
 
 ## Author
 
 Shashank Jha  
-AI/ML Engineer 
+AI/ML Engineer
