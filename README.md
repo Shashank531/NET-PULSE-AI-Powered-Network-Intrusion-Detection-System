@@ -29,11 +29,13 @@ Overall multi-class accuracy: **~82%**
 The architecture follows a fusion-based design.
 
 ### Flow Branch
+
 - Numerical flow-level features  
 - Scaled using StandardScaler  
 - Processed through fully connected layers  
 
 ### Sequence Branch
+
 - Packet-level sequence representation  
 - Engineered using:
   - Packet size  
