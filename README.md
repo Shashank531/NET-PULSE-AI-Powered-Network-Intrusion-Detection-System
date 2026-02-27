@@ -1,8 +1,4 @@
 # NET-PULSE-AI-Powered-Network-Intrusion-Detection-System
-Built a Fusion CNN-LSTM model on UNSW-NB15 dataset achieving 82% accuracy. Engineered packet-sequence representation from raw flow data. Developed interactive Streamlit dashboard for real-time threat visualization. Implemented feature scaling, categorical encoding, and sequence modeling pipeline.
-
-
-# NET PULSE — AI-Powered Network Intrusion Detection System
 
 NET PULSE is a deep learning-based Network Intrusion Detection System (NIDS) built using a hybrid CNN–LSTM fusion architecture trained on the UNSW-NB15 dataset.
 
