@@ -1,7 +1,7 @@
 # NET PULSE — AI-Powered Network Intrusion Detection System
 
-[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-orange)](https://streamlit.io/)
+[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)  
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-orange)](https://streamlit.io/)  
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 NET PULSE is a deep learning-based Network Intrusion Detection System (NIDS) built using a hybrid CNN–LSTM fusion architecture trained on the UNSW-NB15 dataset.
@@ -58,6 +58,7 @@ This design enables the model to learn both statistical and temporal attack patt
 - Flow-level features and attack categories  
 
 Preprocessing includes:
+
 - Label encoding (`proto`, `service`, `state`)  
 - Feature scaling  
 - Custom packet-sequence generation  
@@ -70,14 +71,14 @@ The dataset is not included in this repository due to size constraints.
 
 - Batch CSV analysis  
 - Real-time monitoring mode  
-- Threat score and confidence scoring  
+- Threat scoring and confidence scoring  
 - Interactive visualizations:
   - Threat distribution (pie and bar charts)
   - Confidence histogram
   - Timeline analysis
   - Feature correlation heatmap
   - Packet sequence visualization
-  - 3D traffic pattern analysis
+  - 3D traffic pattern analysis  
 - Risk-level summary dashboard  
 - Modular model loading system  
 
@@ -88,7 +89,7 @@ The dataset is not included in this repository due to size constraints.
 Clone the repository:
 
 ```
-git clone https://github.com/Shashank531/NET-PULSE-AI-Powered-Network-Intrusion-Detection-System.git
+git clone https://github.com/Shashank531/NET-PULSE-AI-Powered-Network-Intrusion-Detection-System.git  
 cd NET-PULSE-AI-Powered-Network-Intrusion-Detection-System
 ```
 
