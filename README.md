@@ -82,30 +82,6 @@ The dataset is not included in this repository due to size constraints.
 
 ---
 
-## Project Structure
-
-netpulse-ai-nids/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── assets/
-│ └── netpulse_logo.png
-│
-├── models/
-│ ├── netpulse_fusion_v2.h5
-│ ├── scaler3.pkl
-│ ├── class_map.pkl
-│ └── config.pkl
-│
-└── notebooks/
-└── training_pipeline.ipynb
-
-
-
----
-
 ## How to Run
 
 Clone the repository:
